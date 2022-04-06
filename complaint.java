@@ -2,6 +2,7 @@ public class complaint {
 private String[] flower;
   
 public String[] getFlower() {	
-return flower;
+  String flowers[]= Arrays.copyOf(flower);
+return flowers;
 }
 }
