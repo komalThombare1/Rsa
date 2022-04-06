@@ -1,5 +1,6 @@
 public class complaint {
 private String[] color;
+  
 public String[] getColor() {	
-return colors;
+return Arrays.copyOf(colors);
 }
