@@ -1,7 +1,7 @@
 public class complaint {
-private String[] color;
+private String[] flower;
   
-public String[] getColor() {	
-return color;
+public String[] getFlower() {	
+return flower;
 }
 }
