@@ -3,7 +3,7 @@ package javacodechecker;
 public class PublicMethodReturnPrivateDataStructure {
 	private static final String[] flower = {"rose,lotus"};
 	private String[] color = {"black","green"};
-	public int[] arr= {1,2,3};
+	private int[] arr= {1,2,3};
 	//EMB-ISSUE: CodeIssueNames.PUBLIC_METHOD_RETURN_PRIVATE_DATA_STRUCTURE
 	public String[] getColor() {
 	return color;
