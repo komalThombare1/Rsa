@@ -26,7 +26,7 @@ public class PublicMethodReturnPrivateDataStructure {
 		}
 	//EMB-ISSUE: CodeIssueNames.PUBLIC_METHOD_RETURN_PRIVATE_DATA_STRUCTURE/no-detect
 	public int[] getArry() {
-		return Arrays.copyOf(arr);
+		return arr;
 	}
 	//EMB-ISSUE: CodeIssueNames.PUBLIC_METHOD_RETURN_PRIVATE_DATA_STRUCTURE/no-detect
 	public String[] getFlower() {
