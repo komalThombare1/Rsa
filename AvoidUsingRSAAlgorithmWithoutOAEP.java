@@ -8,9 +8,9 @@ public class AvoidUsingRSAAlgorithmWithoutOAEP {
         Cipher cipher = Cipher.getInstance("RSA/NONE/NoPadding");
 
         // EMB-ISSUE: CodeIssueNames.AVOID_USING_RSA_ALGORITHM_WITHOUT_OAEP
-        Cipher rsa = javax.crypto.Cipher.getInstance("RSA/NONE/NoPadding");
+        Cipher rsa = javax.crypto.Cipher.getInstance("RSA/ECB/OAEPWithMD5AndMGF1Padding");
 
         // EMB-ISSUE: CodeIssueNames.AVOID_USING_RSA_ALGORITHM_WITHOUT_OAEP/no-detect
-        Cipher cip = Cipher.getInstance("RSA/NONE/NoPadding");
+        Cipher cip = Cipher.getInstance("AES/GCM/NoPadding");
     }
 }
