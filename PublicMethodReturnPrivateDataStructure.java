@@ -10,7 +10,7 @@ public class PublicMethodReturnPrivateDataStructure {
 	}
 	//EMB-ISSUE: CodeIssueNames.PUBLIC_METHOD_RETURN_PRIVATE_DATA_STRUCTURE
 		public String[] getColorss() {	
-		return this.color;
+		return Arrays.copyOf(color);
 		}
 	//EMB-ISSUE: CodeIssueNames.PUBLIC_METHOD_RETURN_PRIVATE_DATA_STRUCTURE/no-detect
 	public String[] getColors() {
@@ -30,7 +30,7 @@ public class PublicMethodReturnPrivateDataStructure {
 	}
 	//EMB-ISSUE: CodeIssueNames.PUBLIC_METHOD_RETURN_PRIVATE_DATA_STRUCTURE/no-detect
 	public String[] getFlower() {
-		return flower;
+		return color;
 	}
 }
 
